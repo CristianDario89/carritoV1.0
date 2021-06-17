@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<style>
+.wraphamb{display:flex; }
+
+.card img{width: 100%;height:100%;}
+
+ 
+</style>
+  
+</head>
+<body>
+ 
+<!-----------------Nav-------------------->
+<!-----------------Nav-------------------->
+<!-----------------Nav-------------------->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a href="" class="navbar-brand " href="#">Compre en casa</a>
+    <div id="usernav"></div>
+    <a href="#" id="close" class="nav-item nav-link active">Cerrar Sesión</a>
+ 
+</nav>
+<!---------------FIN NAV-------------------->
+
+
+
+<!-----------------HEADER-------------------->
+<!-----------------HEADER-------------------->
+<!-----------------HEADER-------------------->
+<header>
+  <div class="content">
+    <h1>POLLERIA 24/7</h1>
+    <p>Bienvenidos a mi tienda virtual.</p>
+     
+  </div>
+</header>  
+
+<div id="wraphamb">
+  </div>
+<!---------------FIN HEADER-------------------->
+
+<!-----------------CARRITO-------------------->
+<!-----------------CARRITO-------------------->
+<!-----------------CARRITO-------------------->
+<div class="container">
+        <div class="row">
+            Pollos
+        </div>
+        <div class="row" id="row1">
+
+        </div>
+        <div class="row">
+            <h3>Carrito</h3>
+        </div>
+        <div class="row" id="row2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Remove</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tableProducts">
+
+                </tbody>
+                <tfoot id="total">
+
+                </tfoot>
+            </table>
+        </div>
+</div>
+<!--------FIN-----CARRITO-------------------->
+
+
+<!-----------------FORM-------------------->
+<!-----------------FORM-------------------->
+<!-----------------FORM------------------
+<div>
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="nigeria">Nigeria</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        
+          <button type="submit" id="submit" >Submit</button>
+        </form>
+</div>
+    
+      <div>
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname2" name="firstname" placeholder="Your name..">
+       
+          <button type="submit" id="submit2" >Submit</button>
+        </form>
+      </div>-->
+<!--------------FIN FORM-------------------->
+
+      <!--
+            <h1>CRUD API REST AJAX</h1>
+      <section class="crud">
+        <article>
+          <h2 class="crud-title">Agregar Santo</h2>
+          <form class="crud-form">
+            <input type="text" name="nombre" placeholder="nombre" required>
+            <br>
+            <input type="text" name="constelacion" placeholder="constelación" required>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="hidden" name="id">
+          </form>
+        </article>
+        <article>
+          <h2>Ver Santos</h2>
+          <table class="crud-table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Constelación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </article>
+      </section>
+      <template id="crud-template">
+        <tr>
+          <td class="name"></td>
+          <td class="constellation"></td>
+          <td>
+            <button class="edit">Editar</button>
+            <button class="delete">Eliminar</button>
+          </td>
+        </tr>
+      </template>
+      <script>
+        /* **********     Curso JavaScript: 115. APIs REST: CRUD con AJAX (1/2) - #jonmircha     ********** */
+        /* **********     Curso JavaScript: 116. APIs REST: CRUD con AJAX (2/2) - #jonmircha     ********** */
+        const d = document,
+          $table = d.querySelector(".crud-table"),
+          $form = d.querySelector(".crud-form"),
+          $title = d.querySelector(".crud-title"),
+          $template = d.getElementById("crud-template").content,
+          $fragment = d.createDocumentFragment();
+    
+        const ajax = (options) => {
+          let { url, method, success, error, data } = options;
+          const xhr = new XMLHttpRequest();
+    
+          xhr.addEventListener("readystatechange", e => {
+            if (xhr.readyState !== 4) return;
+    
+            if (xhr.status >= 200 && xhr.status < 300) {
+              let json = JSON.parse(xhr.responseText); // lo primero del obj js la rta a formato json
+              success(json);
+            } else {
+              let message = xhr.statusText || "Ocurrió un error";
+              error(`Error ${xhr.status}: ${message}`);
+            }
+          });
+    
+          xhr.open(method || "GET", url);
+          xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+          xhr.send(JSON.stringify(data));
+        }
+    
+        const getAll = () => {
+          ajax({
+            url: "http://localhost:3000/santos",
+            success: (res) => {
+              console.log(res);
+    
+              res.forEach(el => {
+                $template.querySelector(".name").textContent = el.nombre;
+                $template.querySelector(".constellation").textContent = el.constelacion;
+                $template.querySelector(".edit").dataset.id = el.id; //dataset pa acceder a los atrib y manip 
+                $template.querySelector(".edit").dataset.name = el.nombre;
+                $template.querySelector(".edit").dataset.constellation = el.constelacion;
+                $template.querySelector(".delete").dataset.id = el.id; //el endpoint q solo nos intreesa el ID
+    
+                let $clone = d.importNode($template, true); //clonando template
+                $fragment.appendChild($clone); //fragment pa no afectar tanto el cont del DOM
+              });
+              //se supone q ya fragment esta ready, el fragmento conm todos los nodeos clonados agregalos al tbody de la tabla
+              $table.querySelector("tbody").appendChild($fragment);
+            },
+            error: (err) => { //ajeno a a la pet ajax
+              console.log(err);
+              $table.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`); //afterend = desp q termine la tabla,al final
+            }
+          })
+        }
+    
+        d.addEventListener("DOMContentLoaded", getAll);
+    
+        d.addEventListener("submit", e => {
+          if (e.target === $form) {
+            e.preventDefault();
+    
+            if (!e.target.id.value) {
+              //Create - POST
+              ajax({
+                url: "http://localhost:3000/santos",
+                method: "POST",
+                success: (res) => location.reload(),
+                error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
+                data: {
+                  nombre: e.target.nombre.value,
+                  constelacion: e.target.constelacion.value
+                }
+              });
+            } else {
+              //Update - PUT
+              ajax({
+                url: `http://localhost:3000/santos/${e.target.id.value}`,
+                method: "PUT",
+                success: (res) => location.reload(),
+                error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
+                data: {
+                  nombre: e.target.nombre.value,
+                  constelacion: e.target.constelacion.value
+                }
+              });
+            }
+          }
+        });
+    
+        d.addEventListener("click", e => {
+          if (e.target.matches(".edit")) {
+            $title.textContent = "Editar Santo";
+            $form.nombre.value = e.target.dataset.name;
+            $form.constelacion.value = e.target.dataset.constellation;
+            $form.id.value = e.target.dataset.id;
+          }
+    
+          if (e.target.matches(".delete")) {
+            let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
+    
+            if (isDelete) {
+              //Delete - DELETE
+              ajax({
+                url: `http://localhost:3000/santos/${e.target.dataset.id}`,
+                method: "DELETE",
+                success: (res) => location.reload(),
+                error: (err) => alert(err)
+              });
+            }
+          }
+        })
+      </script>
+      -->
+  
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim.js/4.0.7/Slim.min.js"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    
+    <script src="js/nav.js"></script>
+    <script src="js/server.js"></script> 
+    <script src="js/logic.js"></script>
+    
+</body>
+</html>

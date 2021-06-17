@@ -1,0 +1,221 @@
+
+<html lang="en">
+    <head>
+    
+        <meta charset="utf-8">
+        <!-- IE Meta-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Mobile Meta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+        <title>Melon Template</title>
+        <!-- Bootstrap library
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        -->
+        <!-- normalize library  for good reset-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- font-awesome icons library -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- Hover.Css Animations File -->
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+        <!-- animate for WOW Css File -->
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!-- Main Css File -->
+        <link rel="stylesheet" href="css/Style.css">
+        <!-- Arabic Bootstrap Css File -->
+        <!--
+         Load Bootstrap RTL theme from RawGit
+        <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
+        -->
+    
+    <style>
+        /* Start Main CSS*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+}
+
+.container {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* End Main CSS*/
+
+/* Start nav*/
+nav {
+    height: 70px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transform: skew(0deg , 10deg);
+    transform-origin:top left;
+}
+
+nav .logo {
+    float: left;
+    width: 10%;
+}
+
+nav .logo .logo-font {
+    line-height: 70px;
+    font-size: xx-large;
+    color: white;
+}
+
+nav .nav-bar {
+    float: right;
+    width: 90%;
+}
+
+nav .nav-bar ul {
+    width: 100%;
+    list-style-type: none;
+    line-height: 70px;
+    float: right;
+    text-align: right;
+}
+
+nav .nav-bar ul li {
+    display: inline-block;
+    text-align: right;
+    padding-left: 2%;
+
+}
+
+nav .nav-bar ul li a {
+    text-transform: uppercase;
+    font-size: xx-small;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* End nav*/
+
+/* Start header*/
+.header {
+
+    background-image: url("https://preview.ibb.co/hUE6Uk/stats.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height:     600px;
+    width: 100%;
+    transform: skew(0deg , -10deg);
+    transform-origin:top left; /* very very very important */
+
+
+    /*     -webkit-clip-path: polygon(0px 607px,1398px 515px,1143px 0px,0px 0px);
+      -moz-clip-path:polygon(0px 607px,1398px 515px,1143px 0px,0px 0px);
+          clip-path: polygon(0px 607px,1398px 515px,1143px 0px,0px 0px);
+          */
+
+}
+
+.header .over-lay {
+    background-color: rgba(23, 173, 234, 0.8);
+    min-height: 600px;
+    width: 100%;
+}
+
+/*---------------------*/
+@media screen and (max-width:800px) {       
+    .header {
+ 
+min-height:     400px; 
+ 
+}
+
+.header .over-lay {
+ 
+min-height: 400px;
+ 
+}
+} 
+
+    </style>
+       
+    
+    </head>
+    <body>
+    
+    <!-- Start Header section  -->
+    <section class="header">
+    
+    
+        <div class="over-lay">
+    
+    
+            <!-- Start nav  -->
+    
+            <nav>
+                <div class="container">
+    
+                    <div class="logo">
+                        <span class="logo-font">Melon</span>
+                    </div>
+    
+                    <div class="nav-bar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Testemonials</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End nav  -->
+    
+    
+        </div>
+    
+    </section>
+    
+    
+    <!-- End Header  Section -->
+    
+    <!-- jquery library -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- bootstrap library -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- nicescroll File -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <!-- WOW JS File -->
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Main JavaScript File -->
+    <script src="js/MyJSFunc.js"></script>
+    </body>
+    </html>
+    
