@@ -315,10 +315,10 @@ function addAmount(id){
   (() => {
     for(let index = 0; index < products.length;index++){
        document.getElementById('row1').innerHTML+=`
-       <div class="card m-2 " style="width:130px;">
+       <div class="card mx-2 my-1" style="width:115px;">
        <img src="${products[index].img}" class="card-img-top" alt=""> 
        <div class="card-body">
-              <p class="card-textmio">$ ${products[index].price}.00</p>
+            <p class="card-textmio">$ ${products[index].price}.00</p>
            <button class="btnmio" onclick="add('${products[index].id}')">Agregar</button>
        </div>
     </div>

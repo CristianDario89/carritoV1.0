@@ -12,8 +12,8 @@ body {
 
 .cs_thumb img{width:70px; height:50px;}
 /**********18-6***********/
-.wraptitubebi{text-align: center;background-color: yellow;}
-.titubebi{color:black;   padding:10px;}
+.wraptitubebi{text-align: center;background-color: rgb(245, 245, 147);}
+.titubebi{color:black;   padding:5px;}
 
 .titucasa, .cerrars{
     color:black;
