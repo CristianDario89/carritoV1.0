@@ -8,26 +8,30 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <style>
-.wraphamb{display:flex; }
+.wraphamb{display:flex;}
 
 .card img{width: 100%;height:100%;}
 
- 
+.wrapslider{display:grid;grid-template-columns: 70% 30%;}
+
+.divideheader1 {height:100%;width:100%; }
+
+.divideheader2 div { height:100px;
+}
+
+.divideheader2 div:nth-child(1){background-color:red}
+.divideheader2 div:nth-child(2){background-color:blue}
 </style>
-  
 </head>
 <body>
- 
-<!-----------------Nav-------------------->
-<!-----------------Nav-------------------->
-<!-----------------Nav-------------------->
+<!-----------------Nav--------------------><!-----------------Nav-------------------->
 <nav class="navbar navbar-expand-lg navbar-light">
     <a href="" class="navbar-brand " href="#">Compre en casa</a>
     <div id="usernav"></div>
@@ -36,26 +40,80 @@
 </nav>
 <!---------------FIN NAV-------------------->
 
-
-
-<!-----------------HEADER-------------------->
-<!-----------------HEADER-------------------->
-<!-----------------HEADER-------------------->
-<header>
-  <div class="content">
-    <h1>POLLERIA 24/7</h1>
-    <p>Bienvenidos a mi tienda virtual.</p>
-     
+<!-----------------HEADER--------------------><!-----------------HEADER-------------->
+<div class="wrapslider">
+  <div class="divideheader1">
+    <div class='csslider1 autoplay'  data-section="galletitas" id="galletitas">
+      <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
+      <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
+      <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
+      <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
+      <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
+      <ul>
+        <div style="width: 100%;height:200px; visibility: hidden; font-size: 0px; line-height: 0;">
+          <img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;height:100%;">
+        </div>
+        <li class='num0 img'>
+           <a href="#" target=""><img src='img/bebi/1.png' alt='Buns' title='Buns' /> </a> 
+        </li>
+        <li class='num1 img'>
+           <a href="#" target=""><img src='img/bebi/2.png' alt='Croissant' title='Croissant' /> </a> 
+        </li>
+        <li class='num2 img'>
+           <a href="#" target=""><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /> </a> 
+        </li>
+      
+      </ul>
+      <div class='cs_description'>
+        <label class='num0'>
+          <span class="cs_title"><span class="cs_wrapper">SALADAS</span></span>
+        </label>
+        <label class='num1'>
+          <span class="cs_title"><span class="cs_wrapper">DULCES</span></span>
+        </label>
+        <label class='num2'>
+          <span class="cs_title"><span class="cs_wrapper">Antes <s>$250</s> ahora $200</span></span>
+        </label>
+      </div>
+      
+      <div class='cs_arrowprev'>
+        <label class='num0' for='cs_slide1_0'></label>
+        <label class='num1' for='cs_slide1_1'></label>
+        <label class='num2' for='cs_slide1_2'></label>
+      </div>
+      <div class='cs_arrownext'>
+        <label class='num0' for='cs_slide1_0'></label>
+        <label class='num1' for='cs_slide1_1'></label>
+        <label class='num2' for='cs_slide1_2'></label>
+      </div>
+      
+      <div class='cs_bullets'>
+        <label class='num0' for='cs_slide1_0'>
+          <span class='cs_point'></span>
+          <span class='cs_thumb'><img src='img/bebi/1.png' alt='Buns' title='Buns' /></span>
+        </label>
+        <label class='num1' for='cs_slide1_1'>
+          <span class='cs_point'></span>
+          <span class='cs_thumb'><img src='img/bebi/2.png' alt='Croissant' title='Croissant' /></span>
+        </label>
+        <label class='num2' for='cs_slide1_2'>
+          <span class='cs_point'></span>
+          <span class='cs_thumb'><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /></span>
+        </label>
+      </div>
+    </div>
   </div>
-</header>  
+  <div class="divideheader2">
+    <div>ffffffffffff</div>
+    <div>ghggggggggggg</div>
+  </div>
+</div>
 
 <div id="wraphamb">
-  </div>
+</div>
 <!---------------FIN HEADER-------------------->
 
-<!-----------------CARRITO-------------------->
-<!-----------------CARRITO-------------------->
-<!-----------------CARRITO-------------------->
+<!-----------------CARRITO--------------------><!-----------------CARRITO------------>
 <div class="container">
         <div class="row">
             Pollos
@@ -90,9 +148,7 @@
 <!--------FIN-----CARRITO-------------------->
 
 
-<!-----------------FORM-------------------->
-<!-----------------FORM-------------------->
-<!-----------------FORM------------------
+<!-----------------FORM--------------------><!-----------------FORM-------------------
 <div>
         <form>
           <label for="fname">First Name</label>
@@ -122,7 +178,7 @@
       </div>-->
 <!--------------FIN FORM-------------------->
 
-      <!--
+<!--
             <h1>CRUD API REST AJAX</h1>
       <section class="crud">
         <article>
@@ -276,20 +332,14 @@
         })
       </script>
       -->
-  
-      
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
+    <script>new WOW().init();</script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slim.js/4.0.7/Slim.min.js"></script>
-
-    
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
     
