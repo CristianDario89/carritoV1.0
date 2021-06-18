@@ -150,7 +150,7 @@ function add(id){
             <tr>
             <th scope="row">${con+1} </th>
             <td><button class="btn btn-danger" onclick="remove(${products[index].id})">X</button></td>
-            <td><img src="${products[index].img}" style="width:5rem" alt=""></td>
+            <td><img src="${products[index].img}" style="width:5rem;height:70px;" alt=""></td>
             <td${products[index].name}></td>
         
             <td>
