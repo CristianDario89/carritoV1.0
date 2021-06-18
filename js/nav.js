@@ -11,5 +11,5 @@ if(username != null){
 
 close.addEventListener('click', function(){
     localStorage.clear('user');
-    location.href = 'login.html'
+    location.href = 'index.html'
 });

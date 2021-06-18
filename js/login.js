@@ -16,7 +16,7 @@ localStorage.setItem("user", JSON.stringify(users));
 
 validate();
 
-location.href = "index.html"
+location.href = "homepage.html"
 });
 
 function validate(){
