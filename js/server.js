@@ -42,7 +42,7 @@ function buy(){
 var products = [
     {
         id: 1,
-        img: './img/pechu.jpg',
+        img: './img/bebi/bb9.jpg',
         name:'Algo',
         price:33,
         cart:false,
@@ -51,7 +51,7 @@ var products = [
     },
     {
         id: 2,
-        img: './img/alitas.jpg',
+        img: './img/bebi/bb3.webp',
         name:'Algo2',
         price:55,
         cart:false,
@@ -60,8 +60,8 @@ var products = [
     },
     {
         id: 3,
-        img: './img/pechu.jpg',
-        name:'Algo',
+        img: './img/bebi/bb2.png',
+        name:'Algo3',
         price:33,
         cart:false,
         quantity:1,
@@ -69,8 +69,8 @@ var products = [
     },
     {
         id: 4,
-        img: './img/alitas.jpg',
-        name:'Algo2',
+        img: './img/bebi/bb1.webp',
+        name:'Algo4',
         price:55,
         cart:false,
         quantity:1,
@@ -78,8 +78,8 @@ var products = [
     },
     {
         id: 5,
-        img: './img/pechu.jpg',
-        name:'Algo',
+        img: './img/bebi/bb5.webp',
+        name:'Algo5',
         price:33,
         cart:false,
         quantity:1,
@@ -87,8 +87,8 @@ var products = [
     },
     {
         id: 6,
-        img: './img/alitas.jpg',
-        name:'Algo2',
+        img: './img/bebi/bb11.jpg',
+        name:'Algo6',
         price:55,
         cart:false,
         quantity:1,
@@ -96,8 +96,8 @@ var products = [
     },
     {
         id:7,
-        img: './img/pechu.jpg',
-        name:'Algo',
+        img: './img/bebi/bb6.webp',
+        name:'Algo7',
         price:33,
         cart:false,
         quantity:1,
@@ -105,8 +105,8 @@ var products = [
     },
     {
         id: 8,
-        img: './img/alitas.jpg',
-        name:'Algo2',
+        img: './img/bebi/c22.png',
+        name:'Algo8',
         price:55,
         cart:false,
         quantity:1,
@@ -315,11 +315,10 @@ function addAmount(id){
   (() => {
     for(let index = 0; index < products.length;index++){
        document.getElementById('row1').innerHTML+=`
-       <div class="card m-1" style="width:150px;">
+       <div class="card m-2 " style="width:130px;">
        <img src="${products[index].img}" class="card-img-top" alt=""> 
        <div class="card-body">
-           <h5 class="card-titlemio"  >${products[index].name}</h5>
-           <p class="card-textmio">${products[index].price}.00</p>
+              <p class="card-textmio">$ ${products[index].price}.00</p>
            <button class="btnmio" onclick="add('${products[index].id}')">Agregar</button>
        </div>
     </div>
