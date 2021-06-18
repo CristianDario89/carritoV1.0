@@ -20,7 +20,7 @@
 .csslider1 {
 	display: inline-block;
 	position: relative;
-	 height:200px;
+	 height:200px;width:100%;
 }
 .csslider1 > .cs_anchor {
 	display: none;
@@ -1288,12 +1288,12 @@
 	-o-animation: none;
 	animation: none;
 }
-
+/*
 @media only screen and (min-width: 321px) and (max-width: 768px) {
 .csslider1 { 
      ;}
 }
-
+*/
 @media
 only screen and (max-width: 480px),
 only screen and (-webkit-max-device-pixel-ratio: 2)      and (max-width: 480px),
@@ -1307,3 +1307,4 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 		display: none;
 	}
 } 
+ 
