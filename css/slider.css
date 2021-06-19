@@ -20,7 +20,7 @@
 .csslider1 {
 	display: inline-block;
 	position: relative;
-	 height:200px;width:100%;
+	 
 }
 .csslider1 > .cs_anchor {
 	display: none;

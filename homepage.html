@@ -25,7 +25,7 @@
 
 .wrapslider{
   display:grid;grid-template-columns: 70% 30%;
-   grid-template-rows: 220px;
+   grid-template-rows: 250px;
 margin:0 150px;}
 
 .divideheader1 {height:100%;width:100%; }
@@ -49,7 +49,10 @@ margin:0 150px;}
   
 @media only screen and (min-width: 321px) and (max-width: 768px) {
 
-.wrapslider{ margin:0;}
+  .wrapslider{
+  
+   grid-template-rows:190px;
+  margin:0;}
 .swiper-container{width:100%;height:100%; }
 
 } 
@@ -75,7 +78,7 @@ margin:0 150px;}
       <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
       <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
       <ul>
-        <div style="width: 100%;height:220px; visibility: hidden; font-size: 0px; line-height: 0;" >
+        <div class="alturaslider" style="width: 100%;height:100%; visibility: hidden; font-size: 0px; line-height: 0;" >
           <img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;height:100%;" >
         </div>
         <li class='num0 img'>
