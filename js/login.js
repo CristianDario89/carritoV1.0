@@ -27,7 +27,7 @@ if(username2 == 'berrako' && password2 == '123456'
 ||  username2 == 'mono' && password2 == '121212'
 ||  username2 == 'melli' && password2 == '131313'
 ||  username2 == 'naupro' && password2 == '141414'){
-         alert("Login exitoso pa")
+         alert("Éxito. ahora en la pera.")
         return false;
     }else{
         alert("Usuario o contraseña incorrecta");
