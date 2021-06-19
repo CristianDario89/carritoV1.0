@@ -28,7 +28,7 @@
    grid-template-rows: 250px;
 margin:0 150px;}
 
-.divideheader1 {height:100%;width:100%; }
+.divideheader1 {width:100%; }
 
 .divideheader2   { height:100%;
 }
@@ -36,7 +36,7 @@ margin:0 150px;}
 /*--------------------------*/
 .swiper-container{
 	width:100%;
-	height:250px; 
+	height:100%; 
   }
   
   .swiper-slide{
@@ -50,10 +50,8 @@ margin:0 150px;}
 @media only screen and (min-width: 321px) and (max-width: 768px) {
 
   .wrapslider{
-  
-   grid-template-rows:190px;
-  margin:0;}
-.swiper-container{width:100%;height:100%; }
+    
+  margin:0;} 
 
 } 
 </style>
@@ -70,7 +68,7 @@ margin:0 150px;}
 
 <!-----------------HEADER--------------------><!-----------------HEADER-------------->
 <div class="wrapslider">
-  <div class="divideheader1">
+ 
     <div class='csslider1 autoplay'  data-section="galletitas" id="galletitas">
       <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
       <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
@@ -78,7 +76,7 @@ margin:0 150px;}
       <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
       <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
       <ul>
-        <div class="alturaslider" style="width: 100%;height:100%; visibility: hidden; font-size: 0px; line-height: 0;" >
+        <div class="alturaslider" style="width: 100%;height:250px; visibility: hidden; font-size: 0px; line-height: 0;" >
           <img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;height:100%;" >
         </div>
         <li class='num0 img'>
@@ -119,12 +117,10 @@ margin:0 150px;}
           <span class='cs_thumb'><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /></span>
         </label>
       </div>
-    </div>
-  </div>
+    </div> 
+
   <div class="divideheader2">
-    
-          
-    <div class="swiper-container">
+     <div class="swiper-container">
       <div class="swiper-wrapper">  
         <div class="swiper-slide"> <img src="img/bebi/c22.png"> </div>
         <div class="swiper-slide"><img src="img/bebi/c33.png"></div>
@@ -140,13 +136,13 @@ margin:0 150px;}
 <!-----------------CARRITO--------------------><!-----------------CARRITO------------>
 <div class="container">
         <div class="row wraptitubebi">
-            <h3 class="titubebi">Qué bebida desea comprar?</h3>
+            <h3 class="titubebi">Qué desea comprar?</h3>
         </div>
         <div class="row" id="row1">
 
         </div>
-        <div class="row">
-            <h3>Carrito</h3>
+        <div class="row wrapcarritotitu">
+            <h3 class="carritotitu">Carrito</h3>
         </div>
         <div class="row" id="row2">
             <table class="table">
@@ -190,17 +186,16 @@ margin:0 150px;}
         
           <button type="submit" id="submit" >Submit</button>
         </form>
-</div>
+</div>----->
     
-      <div>
+      <div class="formusu" id="formusu">
         <form>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname2" name="firstname" placeholder="Your name..">
+          <label for="fname" class="estilolabel">Confirmar usuario</label>
+          <input type="text" id="usuario" name="firstname" placeholder="Su usuario..">
        
-          <button type="submit" id="submit2" >Submit</button>
+          <button type="submit" id="submit" class="btnmio2">Enviar</button>
         </form>
-      </div>-->
-<!--------------FIN FORM-------------------->
+      </div> 
 
 <!--
             <h1>CRUD API REST AJAX</h1>

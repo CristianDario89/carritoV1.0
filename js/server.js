@@ -34,9 +34,14 @@ function buy(){
     Swal.fire({
         type: 'success',
         title: 'Success',
-        text: 'Operacion completada'
+        text: 'Pedido cargado. Confirme usuario para completar compra'
     });
+    confirmeUsuario();
     clearInterval();
+}
+
+function confirmeUsuario(){
+    document.getElementById("formusu").style.display = "block";
 }
 
 var products = [
@@ -155,8 +160,8 @@ function add(id){
         
             <td>
                 <input type="text" style="width:2rem;" id="${products[index].id}" value="${products[index].quantity}" disabled>
-                <button class="btn btn-primary" onclick="reduceAmount(${products[index].id})">-</button>
-                <button class="btn btn-primary" onclick="addAmount(${products[index].id})">+</button>
+                <button class="btnmio" onclick="reduceAmount(${products[index].id})">-</button>
+                <button class="btnmio" onclick="addAmount(${products[index].id})">+</button>
             </td>
 
             <td>${products[index].price*products[index].quantity  }</td>
@@ -189,7 +194,7 @@ function add(id){
                 <td></td>
                 <td></td>
                 <td>
-                <button class="btn btn-success" onclick="buy()">Comprar</button>
+                <button class="btnmio2" onclick="buy()">Comprar</button>
                 </td>
             </tr>
         ` 
@@ -275,7 +280,7 @@ function updateCart(){
             <td></td>
             <td></td>
             <td>
-            <button class="btn btn-success" onclick="buy()">Comprar</button>
+            <button class="btnmio2" onclick="buy()">Comprar</button>
             </td>
         </tr>
     `
@@ -319,7 +324,7 @@ function addAmount(id){
        <img src="${products[index].img}" class="card-img-top"  alt=""> 
        <div class="card-body">
             <p class="card-textmio">$ ${products[index].price}.00</p>
-           <button class="btnmio" onclick="add('${products[index].id}')">Agregar</button>
+           <button class="btnmio" onclick="add('${products[index].id}')">+</button>
        </div>
     </div>
        ` 
@@ -327,11 +332,11 @@ function addAmount(id){
   })();
 
 
-  /*----------------*/
+  
   var firestore = firebase.firestore()
 
 //Variable to access database collection
-const db2 = firestore.collection("fomData")
+const db2 = firestore.collection("Usuarios")
 
 //Get Submit Form
 let submitButton = document.getElementById('submit')
@@ -342,15 +347,11 @@ submitButton.addEventListener("click", (e) => {
   e.preventDefault()
 
   //Get Form Values
-  let firstName = document.getElementById('fname').value
-  let lastName = document.getElementById('lname').value
-  let country = document.getElementById('country').value
+  let firstName = document.getElementById('usuario').value 
 
   //Save Form Data To Firebase
   db2.doc().set({
-    fname: firstName,
-    lname: lastName,
-    country: country
+    usuario: firstName 
   }).then( () => {
     console.log("Data saved")
   }).catch((error) => {
@@ -358,5 +359,5 @@ submitButton.addEventListener("click", (e) => {
   })
 
   //alert
-  alert("Your Form Has Been Submitted Successfully")
+  alert("Compra finalizada. ")
 })

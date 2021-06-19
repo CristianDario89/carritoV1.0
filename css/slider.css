@@ -19,8 +19,7 @@
 }
 .csslider1 {
 	display: inline-block;
-	position: relative;
-	 
+	position: relative; 
 }
 .csslider1 > .cs_anchor {
 	display: none;
