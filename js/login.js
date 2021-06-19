@@ -23,7 +23,7 @@ function validate(){
 const username2 = document.getElementById("username").value;
 const password2 = document.getElementById("password").value;
  
-if(username2 == 'berrako' && password2 == '123456'){
+if(username2 == 'berrako' && password2 == '123456' ||  username2 == 'mono' && password2 == '121212'){
          alert("Login exitoso pa")
         return false;
     }else{
