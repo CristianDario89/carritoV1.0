@@ -33,8 +33,8 @@ function buy(){
 
     Swal.fire({
         type: 'success',
-        title: 'Success',
-        text: 'Pedido cargado. Confirme usuario para completar compra'
+        title: 'Pedido cargado',
+        text: 'Confirme usuario para completar compra'
     });
     confirmeUsuario();
     clearInterval();
@@ -302,7 +302,7 @@ function add(id){
                 <td></td>
                 <td></td>
                 <td>
-                <button class="btnmio2" onclick="buy()">Comprar</button>
+                <button class="estilolabel" onclick="buy()">Comprar</button>
                 </td>
             </tr>
         ` 

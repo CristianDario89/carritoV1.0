@@ -12,7 +12,7 @@ body {
     background-size: cover;
  }
  /***********-*******************/
-.card-titlemio, .card-textmio{color:red;}
+.card-titlemio, .card-textmio{color:hsla(201, 100%, 6%, 0.9); font-size: 20px;}
 
 .cs_thumb img{width:70px; height:50px;}
 /**********18-6***********/
@@ -40,12 +40,20 @@ body {
 /*------------*/
 .alturaslider{height:280px;}
 
-.formusu{display:none;}
+.formusu{display:none;text-align:end;
+margin-bottom: 40px;}
 
-.estilolabel{   color:hsl(201, 100%, 50%);
+#usuario{ 
+padding: 5px 0  5px 4px;
+}
+
+.estilolabel{   color:hsl(201, 44%, 85%);
+    letter-spacing: 2px;
     background-color: hsla(201, 100%, 6%, 0.9); padding:10px;
-border-radius: 5px;
-margin: 4px;}
+border-radius: 5px; font-family: 'Bangers';
+text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 0px 0px 15px, #2da0ff 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+   
+ }
 
 .btnmio{
     padding: 5px; 
@@ -70,7 +78,7 @@ margin: 4px;}
     width: 100px;
     border-radius: 5px;
     background: hsl(201, 100%, 50%);
-    border: 1px solidhsla(201, 100%, 6%, 0.9);
+    border: 1px solid hsla(201, 100%, 6%, 0.9);
     outline: none;
     font-size: 12px;
     color: black;
@@ -79,8 +87,10 @@ margin: 4px;}
   }
 
   .carritotitu{
-      width:100px;padding:10px;
-    background: hsla(201, 93%, 6%, 0.9);
+    letter-spacing: 1.5px;
+      width:100px;padding:10px;margin-top: 10px;
+    background: #F4F; 
+    box-shadow:1px 1px 22px #F4F;
      
   }
  /**************--------------------------**************/
