@@ -47,8 +47,8 @@ function confirmeUsuario(){
 var products = [
     {
         id: 1,
-        img: './img/bebi/bb9.jpg',
-        name:'Algo',
+        img: './img/bebi/bb2.PNG',
+        name:'Fernet',
         price:33,
         cart:false,
         quantity:1,
@@ -56,8 +56,8 @@ var products = [
     },
     {
         id: 2,
-        img: './img/bebi/bb3.webp',
-        name:'Algo2',
+        img: './img/bebi/bb1.webp',
+        name:'AlGanciago2',
         price:55,
         cart:false,
         quantity:1,
@@ -65,8 +65,8 @@ var products = [
     },
     {
         id: 3,
-        img: './img/bebi/bb2.png',
-        name:'Algo3',
+        img: './img/bebi/bb5.webp',
+        name:'Patagonia',
         price:33,
         cart:false,
         quantity:1,
@@ -74,8 +74,8 @@ var products = [
     },
     {
         id: 4,
-        img: './img/bebi/bb1.webp',
-        name:'Algo4',
+        img: './img/bebi/bb11.jpg',
+        name:'Brahama',
         price:55,
         cart:false,
         quantity:1,
@@ -83,7 +83,7 @@ var products = [
     },
     {
         id: 5,
-        img: './img/bebi/bb5.webp',
+        img: './img/bebi/c22.png',
         name:'Algo5',
         price:33,
         cart:false,
@@ -92,7 +92,7 @@ var products = [
     },
     {
         id: 6,
-        img: './img/bebi/bb11.jpg',
+        img: './img/bebi/stela.jpg',
         name:'Algo6',
         price:55,
         cart:false,
@@ -101,7 +101,7 @@ var products = [
     },
     {
         id:7,
-        img: './img/bebi/bb6.webp',
+        img: './img/bebi/c44.png',
         name:'Algo7',
         price:33,
         cart:false,
@@ -110,8 +110,116 @@ var products = [
     },
     {
         id: 8,
-        img: './img/bebi/c22.png',
+        img: './img/bebi/bb9.jpg',
         name:'Algo8',
+        price:55,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id:9,
+        img: './img/bebi/bb6.webp',
+        name:'Chandon',
+        price:33,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 10,
+        img: './img/bebi/fede.jpg',
+        name:'Federico',
+        price:55,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 11,
+        img: './img/bebi/tinto.jpg',
+        name:'termidor',
+        price:33,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 12,
+        img: './img/bebi/frize.jpg',
+        name:'Frizze',
+        price:55,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 13,
+        img: './img/bebi/michel.jpg',
+        name:'michel',
+        price:33,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 14,
+        img: './img/bebi/smirnof.jpg',
+        name:'Smirnof',
+        price:55,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id:15,
+        img: './img/bebi/bb7.jpg',
+        name:'Coca-cola',
+        price:33,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id:16,
+        img: './img/bebi/bb8.jpg',
+        name:'Manaoz',
+        price:55,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 17,
+        img: './img/bebi/michel.jpg',
+        name:'michel',
+        price:33,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id: 18,
+        img: './img/bebi/kranchitos.png',
+        name:'Smirnof',
+        price:55,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id:19,
+        img: './img/bebi/kran2.jpg',
+        name:'Coca-cola',
+        price:33,
+        cart:false,
+        quantity:1,
+        total:0
+    },
+    {
+        id:20,
+        img: './img/bebi/lays.jpg',
+        name:'Manaoz',
         price:55,
         cart:false,
         quantity:1,
