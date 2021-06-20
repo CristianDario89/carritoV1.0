@@ -430,7 +430,7 @@ function addAmount(id){
        document.getElementById('row1').innerHTML+=`
     <div class="card mx-1 my-1" style="width:112px;">
             <img src="${products[index].img}" class="card-img-top"  alt=""> 
-            <div class="card-body">
+            <div class="cardbodymio">
        
                 <p class="namecard" >${products[index].name}</p>
                 <p class="card-textmio">$ ${products[index].price}.00</p>
