@@ -4,12 +4,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 /*Heading1*/
-h1{
-	color: #fff;
-	font-size: 44px;
-	margin-top: 40px;
-	text-align: center;
-}
+ 
 /*Sentence*/
 .sentence{
      color: #222;
@@ -80,3 +75,14 @@ h1{
 	100% { opacity: 0; }
 }
  
+/*------------------------------------*/
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+	.sentence{
+		padding-top: 6px;
+		color: #222;
+		font-size: 22px;
+		text-align: center;
+		 
+   } 	 
+	
+} 
