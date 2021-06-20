@@ -57,7 +57,7 @@ var products = [
     {
         id: 2,
         img: './img/bebi/bb1.webp',
-        name:'AlGanciago2',
+        name:'Gancia',
         price:55,
         cart:false,
         quantity:1,
@@ -66,7 +66,7 @@ var products = [
     {
         id: 3,
         img: './img/bebi/bb5.webp',
-        name:'Patagonia',
+        name:'Patagonia 1L',
         price:33,
         cart:false,
         quantity:1,
@@ -75,7 +75,7 @@ var products = [
     {
         id: 4,
         img: './img/bebi/bb11.jpg',
-        name:'Brahama',
+        name:'Brahama 1L',
         price:55,
         cart:false,
         quantity:1,
@@ -84,7 +84,7 @@ var products = [
     {
         id: 5,
         img: './img/bebi/c22.png',
-        name:'Algo5',
+        name:'Quilmes 1L',
         price:33,
         cart:false,
         quantity:1,
@@ -93,7 +93,7 @@ var products = [
     {
         id: 6,
         img: './img/bebi/stela.jpg',
-        name:'Algo6',
+        name:'Stella 1L',
         price:55,
         cart:false,
         quantity:1,
@@ -102,7 +102,7 @@ var products = [
     {
         id:7,
         img: './img/bebi/c44.png',
-        name:'Algo7',
+        name:'Heineken',
         price:33,
         cart:false,
         quantity:1,
@@ -111,7 +111,7 @@ var products = [
     {
         id: 8,
         img: './img/bebi/bb9.jpg',
-        name:'Algo8',
+        name:'Andes Lata',
         price:55,
         cart:false,
         quantity:1,
@@ -174,7 +174,7 @@ var products = [
     {
         id:15,
         img: './img/bebi/bb7.jpg',
-        name:'Coca-cola',
+        name:'Coca-cola 2 1/4',
         price:33,
         cart:false,
         quantity:1,
@@ -183,7 +183,7 @@ var products = [
     {
         id:16,
         img: './img/bebi/bb8.jpg',
-        name:'Manaoz',
+        name:'Manaoz 2 1/4',
         price:55,
         cart:false,
         quantity:1,
@@ -192,7 +192,7 @@ var products = [
     {
         id: 17,
         img: './img/bebi/michel.jpg',
-        name:'michel',
+        name:'Michel',
         price:33,
         cart:false,
         quantity:1,
@@ -201,7 +201,7 @@ var products = [
     {
         id: 18,
         img: './img/bebi/kranchitos.png',
-        name:'Smirnof',
+        name:'Kr. jámon 55g',
         price:55,
         cart:false,
         quantity:1,
@@ -210,7 +210,7 @@ var products = [
     {
         id:19,
         img: './img/bebi/kran2.jpg',
-        name:'Coca-cola',
+        name:'Kranchitos 55g',
         price:33,
         cart:false,
         quantity:1,
@@ -219,7 +219,7 @@ var products = [
     {
         id:20,
         img: './img/bebi/lays.jpg',
-        name:'Manaoz',
+        name:'Lays 55g',
         price:55,
         cart:false,
         quantity:1,
@@ -428,12 +428,14 @@ function addAmount(id){
   (() => {
     for(let index = 0; index < products.length;index++){
        document.getElementById('row1').innerHTML+=`
-       <div class="card mx-1 my-1" style="width:112px;">
-       <img src="${products[index].img}" class="card-img-top"  alt=""> 
-       <div class="card-body">
-            <p class="card-textmio">$ ${products[index].price}.00</p>
-           <button class="btnmio" onclick="add('${products[index].id}')">+</button>
-       </div>
+    <div class="card mx-1 my-1" style="width:112px;">
+            <img src="${products[index].img}" class="card-img-top"  alt=""> 
+            <div class="card-body">
+       
+                <p class="namecard" >${products[index].name}</p>
+                <p class="card-textmio">$ ${products[index].price}.00</p>
+                <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+            </div>
     </div>
        ` 
     }
