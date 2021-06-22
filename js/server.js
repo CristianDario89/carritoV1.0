@@ -49,6 +49,7 @@ var products = [
         id: 1,
         img: './img/bebi/bb2.PNG',
         name:'Fernet',
+        seccion:'otros',
         price:33,
         cart:false,
         quantity:1,
@@ -58,6 +59,7 @@ var products = [
         id: 2,
         img: './img/bebi/bb1.webp',
         name:'Gancia',
+        seccion:'otros',
         price:55,
         cart:false,
         quantity:1,
@@ -67,6 +69,7 @@ var products = [
         id: 3,
         img: './img/bebi/bb5.webp',
         name:'Patagonia 1L',
+        seccion:'cervezas',
         price:33,
         cart:false,
         quantity:1,
@@ -76,6 +79,7 @@ var products = [
         id: 4,
         img: './img/bebi/bb11.jpg',
         name:'Brahama 1L',
+        seccion:'cervezas',
         price:55,
         cart:false,
         quantity:1,
@@ -85,6 +89,7 @@ var products = [
         id: 5,
         img: './img/bebi/c22.png',
         name:'Quilmes 1L',
+        seccion:'cervezas',
         price:33,
         cart:false,
         quantity:1,
@@ -94,6 +99,7 @@ var products = [
         id: 6,
         img: './img/bebi/stela.jpg',
         name:'Stella 1L',
+        seccion:'cervezas',
         price:55,
         cart:false,
         quantity:1,
@@ -103,6 +109,7 @@ var products = [
         id:7,
         img: './img/bebi/c44.png',
         name:'Heineken',
+        seccion:'cervezas',
         price:33,
         cart:false,
         quantity:1,
@@ -112,6 +119,7 @@ var products = [
         id: 8,
         img: './img/bebi/bb9.jpg',
         name:'Andes Lata',
+        seccion:'cervezas',
         price:55,
         cart:false,
         quantity:1,
@@ -121,6 +129,7 @@ var products = [
         id:9,
         img: './img/bebi/bb6.webp',
         name:'Chandon',
+        seccion:'vinos',
         price:33,
         cart:false,
         quantity:1,
@@ -130,6 +139,7 @@ var products = [
         id: 10,
         img: './img/bebi/fede.jpg',
         name:'Federico',
+        seccion:'vinos',
         price:55,
         cart:false,
         quantity:1,
@@ -139,6 +149,7 @@ var products = [
         id: 11,
         img: './img/bebi/tinto.jpg',
         name:'termidor',
+        seccion:'vinos',
         price:33,
         cart:false,
         quantity:1,
@@ -148,6 +159,7 @@ var products = [
         id: 12,
         img: './img/bebi/frize.jpg',
         name:'Frizze',
+        seccion:'vinos',
         price:55,
         cart:false,
         quantity:1,
@@ -157,6 +169,7 @@ var products = [
         id: 13,
         img: './img/bebi/michel.jpg',
         name:'michel',
+        seccion:'vinos',
         price:33,
         cart:false,
         quantity:1,
@@ -166,6 +179,7 @@ var products = [
         id: 14,
         img: './img/bebi/smirnof.jpg',
         name:'Smirnof',
+        seccion:'otros',
         price:55,
         cart:false,
         quantity:1,
@@ -175,6 +189,7 @@ var products = [
         id:15,
         img: './img/bebi/bb7.jpg',
         name:'Coca-cola 2 1/4',
+        seccion:'gaseosas',
         price:33,
         cart:false,
         quantity:1,
@@ -184,6 +199,7 @@ var products = [
         id:16,
         img: './img/bebi/bb8.jpg',
         name:'Manaoz 2 1/4',
+        seccion:'gaseosas',
         price:55,
         cart:false,
         quantity:1,
@@ -193,6 +209,7 @@ var products = [
         id: 17,
         img: './img/bebi/michel.jpg',
         name:'Michel',
+        seccion:'gaseosas',
         price:33,
         cart:false,
         quantity:1,
@@ -202,6 +219,7 @@ var products = [
         id: 18,
         img: './img/bebi/kranchitos.png',
         name:'Kr. jámon 55g',
+        seccion:'snacks',
         price:55,
         cart:false,
         quantity:1,
@@ -211,6 +229,7 @@ var products = [
         id:19,
         img: './img/bebi/kran2.jpg',
         name:'Kranchitos 55g',
+        seccion:'snacks',
         price:33,
         cart:false,
         quantity:1,
@@ -220,6 +239,7 @@ var products = [
         id:20,
         img: './img/bebi/lays.jpg',
         name:'Lays 55g',
+        seccion:'snacks',
         price:55,
         cart:false,
         quantity:1,
@@ -426,18 +446,108 @@ function addAmount(id){
 }
   //RENDER
   (() => {
+
+
+
     for(let index = 0; index < products.length;index++){
-       document.getElementById('row1').innerHTML+=`
-    <div class="card mx-1 my-1" style="width:112px;">
-            <img src="${products[index].img}" class="card-img-top"  alt=""> 
-            <div class="cardbodymio">
-       
-                <p class="namecard" >${products[index].name}</p>
-                <p class="card-textmio">$ ${products[index].price}.00</p>
-                <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+        if (products[index].seccion == 'vinos') {
+            document.getElementById('row1').innerHTML+=`
+            
+            <div class="card mx-1 my-1 project" data-filter='vinos' style="width:112px;">
+                    <img src="${products[index].img}" class="card-img-top"  alt=""> 
+                    <div class="cardbodymio">
+               
+                        <p class="namecard" >${products[index].name}</p>
+                        <p class="card-textmio">$ ${products[index].price}.00</p>
+                        <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+                    </div>
             </div>
-    </div>
-       ` 
+             
+          
+               ` 
+        }
+      
+    }
+
+    for(let index = 0; index < products.length;index++){
+        if (products[index].seccion == 'cervezas') {
+            document.getElementById('row1').innerHTML+=`
+             
+            <div class="card mx-1 my-1 project" data-filter='cervezas' style="width:112px;">
+                    <img src="${products[index].img}" class="card-img-top"  alt=""> 
+                    <div class="cardbodymio">
+               
+                        <p class="namecard" >${products[index].name}</p>
+                        <p class="card-textmio">$ ${products[index].price}.00</p>
+                        <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+                    </div>
+            </div>
+           
+          
+               ` 
+        }
+      
+    }
+
+    for(let index = 0; index < products.length;index++){
+        if (products[index].seccion == 'gaseosas') {
+            document.getElementById('row1').innerHTML+=`
+             
+            <div class="card mx-1 my-1 project" data-filter='gaseosas' style="width:112px;">
+                    <img src="${products[index].img}" class="card-img-top"  alt=""> 
+                    <div class="cardbodymio">
+               
+                        <p class="namecard" >${products[index].name}</p>
+                        <p class="card-textmio">$ ${products[index].price}.00</p>
+                        <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+                    </div>
+            </div>
+           
+          
+               ` 
+        }
+      
+    }
+
+    for(let index = 0; index < products.length;index++){
+        if (products[index].seccion == 'otros') {
+            document.getElementById('row1').innerHTML+=`
+             
+            <div class="card mx-1 my-1 project" data-filter='otros' style="width:112px;">
+                    <img src="${products[index].img}" class="card-img-top"  alt=""> 
+                    <div class="cardbodymio">
+               
+                        <p class="namecard" >${products[index].name}</p>
+                        <p class="card-textmio">$ ${products[index].price}.00</p>
+                        <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+                    </div>
+            </div>
+           
+          
+               ` 
+        }
+      
+    }
+
+    
+    for(let index = 0; index < products.length;index++){
+        if (products[index].seccion == 'snacks') {
+            document.getElementById('row1').innerHTML+=`
+             
+            <div class="card mx-1 my-1 project" data-filter='snacks' style="width:112px;">
+                    <img src="${products[index].img}" class="card-img-top"  alt=""> 
+                    <div class="cardbodymio">
+               
+                        <p class="namecard" >${products[index].name}</p>
+                        <p class="card-textmio">$ ${products[index].price}.00</p>
+                        <button class="btnmio" onclick="add('${products[index].id}')">+</button>
+                    </div>
+            </div>
+           
+          
+               ` 
+        }
+      
     }
   })();
 

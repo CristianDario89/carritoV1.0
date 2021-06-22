@@ -102,3 +102,58 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
  .unico{
   position: relative;right:55px;
  }
+ /*-----------------------------*/
+ 
+/*  Needed for filters */
+
+.hide { /* You can play with the seconds to change the "animation" */
+  animation: hide .5s ease 0s 1 normal forwards;
+  transform-origin: center;
+}
+.show { /* You can play with the seconds to change the "animation" */
+    animation: show .5s ease 0s 1 normal forwards;    
+    transform-origin: center;
+}
+
+@keyframes hide {
+  0%{
+    transform: scale(1);        
+  }
+  100% {
+    transform: scale(0);        
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+@keyframes show {
+  0%{
+    transform: scale(0);     
+    width: 0;
+    height: 0;
+    margin: 0;   
+  }
+  100% {
+    transform: scale(1);    
+  }
+}
+/*  // Needed for filters */
+
+/* For decoration only */
+  
+.filters2 {
+  margin:0 10px;
+  display: flex;
+  justify-content: center;
+  color:hsla(201, 100%, 6%, 0.9);
+}
+.filter2 {
+  margin: 20px;
+}
+.filter2:hover {
+  cursor: pointer;
+}
+.projects{display:flex;flex-direction: row;
+ }
+
+/* // For decoration only */
