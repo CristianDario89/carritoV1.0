@@ -40,12 +40,16 @@ body {
 /*------------*/
 .alturaslider{height:280px;}
 
-.formusu{display:none;text-align:end;
-margin-bottom: 40px;margin-right: 10px;}
-
-#usuario{ 
-padding: 5px 0  5px 4px;
+.formusu{
+  display:none;text-align:end;
+margin-bottom: 40px;margin-right: 10px;
 }
+#envivo{ display:none;}
+
+.formmio{
+  display: flex;justify-content:center;
+}
+#usuario{ }
 
 .estilolabel{  
 position: relative;right:55px;
@@ -54,8 +58,15 @@ letter-spacing: 2px;
 background-color: hsla(201, 100%, 6%, 0.9); padding:10px;
 border-radius: 5px; font-family: 'Bangers';
 text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 0px 0px 15px, #2da0ff 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 45px;
-   
- }
+}
+.estilolabel2{  
+  
+  color:hsl(201, 44%, 85%);
+  letter-spacing: 2px;
+  background-color: hsla(201, 100%, 6%, 0.9); padding:10px;
+  border-radius: 5px; font-family: 'Bangers';
+  text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 0px 0px 15px, #2da0ff 0px 0px 20px, #FF2D95 0px 0px 10px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 45px;
+  }
 
  /**********CARDS*************/
  .cardbodymio{
@@ -157,5 +168,4 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
 }
 .projects{display:flex;flex-direction: row; 
  }
-
-/* // For decoration only */
+                                                                

@@ -37,11 +37,17 @@ function buy(){
         text: 'Confirme usuario para completar compra'
     });
     confirmeUsuario();
+    
+
     clearInterval();
 }
 
 function confirmeUsuario(){
     document.getElementById("formusu").style.display = "block";
+    
+}
+function seguirEnvio(){
+    document.getElementById("envivo").style.display = "block";
 }
 
 var products = [
@@ -550,9 +556,9 @@ function addAmount(id){
     }
   })();
 
-
-  
-  var firestore = firebase.firestore()
+/*----------CONFIRMAR SUARIO-----------------*/ 
+/*----------CONFIRMAR SUARIO-----------------*/
+var firestore = firebase.firestore()
 
 //Variable to access database collection
 const db2 = firestore.collection("Usuarios")
@@ -576,7 +582,11 @@ submitButton.addEventListener("click", (e) => {
   }).catch((error) => {
     console.log(error)
   })
-
-  //alert
-  alert("Compra finalizada. ")
+ //alert
+  alert("Compra finalizada. ");
+  seguirEnvio();
 })
+
+/*----------FIN USUARIO-----------------*/ 
+/*----------FIN USUARIO-----------------*/
+ 

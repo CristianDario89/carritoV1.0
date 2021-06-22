@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEBIDAS YA!</title>
+ 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+<style>
+
+/* // cell */
+.containercell {
+    margin: 0 auto;
+    width: 800px;
+  }
+  
+  .phone {
+    background: #404040;
+    border-radius: 30px;
+    display: block;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+  }
+  #messages{ position: relative;z-index: 111;}
+  .audio {
+    background: #fff;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    height: 7px;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, 0);
+    top: 25px;
+    width: 70px;
+  }
+  
+  .audio:before {
+    background: #fff;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    height: 9px;
+    left: -20px;
+    margin: 0 auto;
+    position: absolute;
+    top: -1px;
+    width: 9px; 
+  } 
+  
+  .phone:after {
+    background: #fff;
+    border-radius: 50%;
+    bottom: 20px;
+    content: "";
+    display: block;
+    height: 45px;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 45px;
+  }
+  
+  .screen {
+    background: #fff;
+    display: block;
+    height: 460px;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 56px;
+    transform: translate(-50%, 0);
+    width: 270px;
+  }
+  
+  .left-buttons {
+    display: block;
+    left: -5px;
+    position: absolute;
+    top: 70px;
+    width: 5px;
+  }
+  
+  .left-buttons:after {
+    height: 30px;
+    width: 5px;
+  }
+  
+  .left-buttons:after, .volume-button:before, .volume-button:after, .right-buttons {
+    background: #404040;
+    border-radius: 2px 0 0 2px;
+    content: "";
+    display: block;
+  }
+  
+  .volume-button {
+    position: absolute;
+    top: 50px;
+  }
+  
+  .volume-button:before, .volume-button:after, .right-buttons {
+    height: 40px;
+    position: absolute;
+    width: 5px;
+  }
+  
+  .volume-button:after {
+    top: 50px;
+  }
+  
+  .right-buttons {
+    border-radius: 0 2px 2px 0;
+    right: -5px;
+    top: 120px;
+  }  
+ 
+  .formcell{padding-left: 10px;padding-top: 10px;}
+@media only screen and (min-width: 321px) and (max-width: 768px) { 
+    .containercell {
+    margin: 0 20px;
+    width: 400px;
+    transform: translateY(40px);
+  }
+  .volver{margin-top: 40px;}
+} 
+</style>
+</head>
+
+<body> 
+
+<div class="containercell">
+    <div class="phone">
+      <div class="audio"></div>
+      <div class="screen">
+
+        <!-- create a form to send message -->
+        <form class="formcell" onsubmit="return sendMessage();">
+            <input id="message" placeholder="mensaje" autocomplete="off" required>
+        
+            <input type="submit">
+        </form>
+
+        <!-- create a list -->
+        <ul id="messages" ></ul>
+      </div>
+      <div class="left-buttons">
+        <div class="volume-button"></div>
+      </div>
+      <div class="right-buttons"></div>
+    </div>
+  </div>
+
+<div class="volver"> <a href="homepage.html">Volver</a> </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+ 
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slim.js/4.0.7/Slim.min.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/logic.js"></script>
+</body> 
+</html> 
