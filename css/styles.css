@@ -148,7 +148,7 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
   color:hsla(201, 100%, 6%, 0.9);
 }
 .filter2 {
-  margin: 20px;
+  margin: 6px;
 }
 .filter2:hover {
   cursor: pointer;
