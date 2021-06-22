@@ -72,6 +72,19 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
     cursor: pointer;
      
   }
+  .btnmio3{
+    padding: 5px; 
+    width: 30%;
+    border-radius: 5px;
+    position: relative; bottom:11px;
+    border: 1px solid hsl(201, 100%, 50%);
+    outline: none;
+    font-size: 12px;
+    color: black;font-weight: 600;
+    
+    cursor: pointer;
+     position: relative;top:2px;
+  }
   
   .btnmio:hover {background-color: hsla(201, 100%, 50%, 0.3);}
   

@@ -283,13 +283,13 @@ function add(id){
             <tr>
             <th scope="row">${con+1} </th>
             <td><button class="btn btn-danger" onclick="remove(${products[index].id})">X</button></td>
-            <td><img src="${products[index].img}" style="width:5rem;height:70px;" alt=""></td>
+            <td><img src="${products[index].img}" style="width:4rem;height:70px;" alt=""></td>
             <td${products[index].name}></td>
         
             <td>
                 <input type="text" style="width:2rem;" id="${products[index].id}" value="${products[index].quantity}" disabled>
-                <button class="btnmio" onclick="reduceAmount(${products[index].id})">-</button>
-                <button class="btnmio" onclick="addAmount(${products[index].id})">+</button>
+                <button class="btnmio3" onclick="reduceAmount(${products[index].id})">-</button>
+                <button class="btnmio3" onclick="addAmount(${products[index].id})">+</button>
             </td>
 
             <td>${products[index].price*products[index].quantity  }</td>
@@ -362,13 +362,13 @@ function updateCart(){
             <tr>
             <th scope="row">${con+1} </th>
             <td><button class="btn btn-danger" onclick="remove(${products[index3].id})">X</button></td>
-            <td><img src="${products[index3].img}" style="width:5rem" alt=""></td>
+            <td><img src="${products[index3].img}" style="width:4rem;height:70px;" alt=""></td>
             <td${products[index3].name}></td>
         
             <td>
                 <input type="text" style="width:2rem;" id="${products[index3].id}" value="${products[index3].quantity}" disabled>
-                <button class="btn btn-primary" onclick="reduceAmount(${products[index3].id})">-</button>
-                <button class="btn btn-primary" onclick="addAmount(${products[index3].id})">-</button>
+                <button class="btnmio3" onclick="reduceAmount(${products[index3].id})">-</button>
+                <button class="btnmio3" onclick="addAmount(${products[index3].id})">+</button>
             </td>
 
             <td>${products[index].price*products[index].quantity  }</td>
