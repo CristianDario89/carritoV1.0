@@ -471,7 +471,7 @@ function addAmount(id){
 
     for(let index = 0; index < products.length;index++){
         if (products[index].seccion == 'cervezas') {
-            document.getElementById('row1').innerHTML+=`
+            document.getElementById('row2').innerHTML+=`
              
             <div class="card mx-1 my-1 project" data-filter='cervezas' style="width:112px;">
                     <img src="${products[index].img}" class="card-img-top"  alt=""> 
@@ -491,8 +491,7 @@ function addAmount(id){
 
     for(let index = 0; index < products.length;index++){
         if (products[index].seccion == 'gaseosas') {
-            document.getElementById('row1').innerHTML+=`
-             
+            document.getElementById('row3').innerHTML+=`
             <div class="card mx-1 my-1 project" data-filter='gaseosas' style="width:112px;">
                     <img src="${products[index].img}" class="card-img-top"  alt=""> 
                     <div class="cardbodymio">
@@ -511,7 +510,7 @@ function addAmount(id){
 
     for(let index = 0; index < products.length;index++){
         if (products[index].seccion == 'otros') {
-            document.getElementById('row1').innerHTML+=`
+            document.getElementById('row4').innerHTML+=`
              
             <div class="card mx-1 my-1 project" data-filter='otros' style="width:112px;">
                     <img src="${products[index].img}" class="card-img-top"  alt=""> 
@@ -532,7 +531,7 @@ function addAmount(id){
     
     for(let index = 0; index < products.length;index++){
         if (products[index].seccion == 'snacks') {
-            document.getElementById('row1').innerHTML+=`
+            document.getElementById('row5').innerHTML+=`
              
             <div class="card mx-1 my-1 project" data-filter='snacks' style="width:112px;">
                     <img src="${products[index].img}" class="card-img-top"  alt=""> 

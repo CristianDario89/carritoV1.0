@@ -153,7 +153,7 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
 .filter2:hover {
   cursor: pointer;
 }
-.projects{display:flex;flex-direction: row;
+.projects{display:flex;flex-direction: row;margin-bottom: 30px;
  }
 
 /* // For decoration only */
