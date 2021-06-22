@@ -322,7 +322,7 @@ function add(id){
                 <td></td>
                 <td></td>
                 <td>
-                <button class="estilolabel unico" onclick="buy()">Comprar</button>
+                <button class="estilolabel" onclick="buy()">Comprar</button>
                 </td>
             </tr>
         ` 
@@ -408,7 +408,7 @@ function updateCart(){
             <td></td>
             <td></td>
             <td>
-            <button class="btnmio2" onclick="buy()">Comprar</button>
+            <button class="estilolabel" onclick="buy()">Comprar</button>
             </td>
         </tr>
     `
