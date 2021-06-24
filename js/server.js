@@ -589,4 +589,158 @@ submitButton.addEventListener("click", (e) => {
 
 /*----------FIN USUARIO-----------------*/ 
 /*----------FIN USUARIO-----------------*/
+
+/*----------PEDIDOS PEDIDOS-----------------*/ 
+/*----------PEDIDOS PEDIDOS-----------------*/
+
+//Variable to access database collection 
+ 
+/*
+var pedidonro=0;
+
+function addAll(name){
+    var ul = document.querySelector('#list');
+    var header = document.createElement('h2');
+
+    header.innerHTML = 'Pedido-'+ (++pedidonro)
+
+    var _name =  document.createElement('li');
+    
+
+    _name.innerHTML = 'Name: '+name;
+   
+    ul.appendChild(header);
+    ul.appendChild(_name);
+    
+}
+function fetchData(){
+    firebase.database().ref('cart').once('value', function(snapshot){
+        snapshot.forEach(
+            function(ChildSnapshot){
+                const datos = JSON.stringify(ChildSnapshot.val());
+                console.log('fetchdata2: ',datos);
+
+                
+               
+                console.log('fetchdata: ',ChildSnapshot.key)
+               
+               addAll(datos);
+            }
+        );
+    });
+}
+
+*/
+
+firebase.database().ref('cart').on('child_added', (snap) => {
+    let qonda = snap.val();
+   /* console.log('added:', qonda);*/
+    let qonda2 = qonda['total'];
+    var ul = document.querySelector('#list');
+    var li = document.createElement('li');
+    li.innerText = qonda2;
+    ul.appendChild(li);
+   
+ 
+   /* let qonda3 = qonda['products'][0]['name']  ; */
+   let qonda3 = qonda['products'] ;
+
+    var ul = document.querySelector('#list2');
+    var li = document.createElement('li');
+    li.innerText = JSON.stringify(qonda3);
+    ul.appendChild(li);
+ 
+ /*
+    for (var key in qonda['products']) {
+         var kualfue = qonda['products'][key];
+
+        var li = document.createElement('li');
+        li.innerText = kualfue['name'] ;
+        ul.appendChild(li);
+      }
+  
+ */
+ 
+   
+
+   
+    
+  });
+   
+ /*
+firebase.database().ref('cart').on('value', snap => {
+    const datos = JSON.stringify(snap.val(),null,3);
+
+    //Muestro en consola el objeto JSON
+    console.log('wtf: ',datos);
+});
+ 
+ /*
+  let count = 0;
+
+  firebase.database().ref('cart').on('child_added', (snap) => {
+    count++;
+    console.log('added:', snap.key);
+  });
+   
+
+  firebase.database().ref('cart').orderByKey().on('child_added', (snapshot) => {
+   let sk = snapshot.key;
+   let sk2 = snapshot.val();
+ 
+
+    console.log('valor:',sk2);
+    console.log('key:',sk);/*
+    console.log('sera: ?',keyValor);*/
+
+/*
+    const data = snapshot.val() || null;
+    if (data) {
+      const id = Object.keys(data)[1];
+      console.log('ordenado2:',id);
+      
+    }
+*/ 
+/*
+Object.keys(snapshot).forEach(key => {
+    let value = snapshot[key];
+
+     console.log('objeto nuevo: ', `${key}: ${value}`);
+}); 
+   
+window.onload(fetchData());
+  /*
+var firebaseRef = firebase.database().ref('cart');
+      
+firebaseRef.on("value", function(snapshot){
+    snapshot.forEach(function(element){
+      const valor = JSON.stringify(element.val());
+
+        document.querySelector('#root').innerHTML +=
+        `
+        <div>${valor}</div>
+        ` 
+    });
+ 
+  }); 
+  */
+ /*
+var dbRecording = firebase.database().ref("cart/"); 
+dbRecording.once("value", function(snapshot2) { 
+  if (snapshot2.exists()) { 
+    snapshot2.forEach(function(value) { 
+      var childObject = value.val(); 
+
+        Object.keys(childObject).forEach(e => console.log(`key = ${e}`));
+     
+        const valor = JSON.stringify(childObject.products);
+        const valor2 = JSON.stringify(childObject.products[0].price);
+
+        document.querySelector('#root').innerHTML += ` <div>${valor}</div>
+        <div>${valor2}</div> ` 
+    }); 
+  } 
+}); */
+
+
  

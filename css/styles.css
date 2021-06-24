@@ -168,4 +168,12 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
 }
 .projects{display:flex;flex-direction: row; 
  }
-                                                                
+  /*----------------*/
+  .wrapul{
+    display:grid;color:black;
+    grid-template-columns: 80% 20%;
+     
+  }
+  .wrapul li{
+    height:100px;
+  }                                                           

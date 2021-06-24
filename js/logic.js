@@ -1,4 +1,6 @@
 var db = firebase.database();
+
+
 /*-----------------*/ 
 ;(function(name, factory) {
   if (typeof window === 'object') {
