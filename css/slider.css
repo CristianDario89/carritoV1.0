@@ -1301,7 +1301,7 @@ only screen and (     -o-max-device-pixel-ratio: 2/1)    and (max-width: 480px),
 only screen and (        max-device-pixel-ratio: 2)      and (max-width: 480px),
 only screen and (                max-resolution: 192dpi) and (max-width: 480px),
 only screen and (                max-resolution: 2dppx)  and (max-width: 480px) { 
-	.csslider1 > .cs_description,
+	 
 	.csslider1 > .cs_bullets {
 		display: none;
 	}

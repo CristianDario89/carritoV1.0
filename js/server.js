@@ -631,10 +631,23 @@ function fetchData(){
 }
 
 */
-
+ 
 firebase.database().ref('cart').on('child_added', (snap) => {
     let qonda = snap.val();
+    console.log('coleccion:', qonda);
+
+ /*  const objeto = Object.keys(qonda) ;
+   console.log('objeto:', objeto);
+
+   const objeto2 = objeto[0];
+   console.log('objeto2:', objeto2);*/
+
+ 
+   
+   
    /* console.log('added:', qonda);*/
+
+   
     let qonda2 = qonda['total'];
     var ul = document.querySelector('#list');
     var li = document.createElement('li');
@@ -644,7 +657,6 @@ firebase.database().ref('cart').on('child_added', (snap) => {
  
    /* let qonda3 = qonda['products'][0]['name']  ; */
    let qonda3 = qonda['products'] ;
-
     var ul = document.querySelector('#list2');
     var li = document.createElement('li');
     li.innerText = JSON.stringify(qonda3);
@@ -659,12 +671,7 @@ firebase.database().ref('cart').on('child_added', (snap) => {
         ul.appendChild(li);
       }
   
- */
- 
-   
-
-   
-    
+ */ 
   });
    
  /*
