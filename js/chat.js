@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 var myName = prompt("Ingrese Usuario");
 
 
-if(myName == 'berrako'  ||  myName == 'mono' ||  myName == 'melli' ||  myName == 'admin' ||  myName == 'naupro'){
+if(myName == 'usuario'||  myName == 'mono'  ||  myName == 'mono' ||  myName == 'melli' ||  myName == 'admin' ||  myName == 'naupro'){
          
 function sendMessage() {
     // get message
