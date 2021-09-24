@@ -37,8 +37,7 @@ body {
     text-decoration: none;
 }
 
-/*------------*/
-.alturaslider{height:280px;}
+/*------------*/ 
 
 .formusu{
   display:none;text-align:end;
@@ -48,8 +47,7 @@ margin-bottom: 40px;margin-right: 10px;
 
 .formmio{
   display: flex;justify-content:center;
-}
-#usuario{ }
+} 
 
 .estilolabel{  
 position: relative;right:55px;

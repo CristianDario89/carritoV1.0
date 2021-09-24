@@ -590,6 +590,7 @@ submitButton.addEventListener("click", (e) => {
 /*----------FIN USUARIO-----------------*/ 
 /*----------FIN USUARIO-----------------*/
 
+
 /*----------PEDIDOS PEDIDOS-----------------*/ 
 /*----------PEDIDOS PEDIDOS-----------------*/
 
@@ -656,9 +657,12 @@ firebase.database().ref('cart').on('child_added', (snap) => {
    
  
    /* let qonda3 = qonda['products'][0]['name']  ; */
-   let qonda3 = qonda['products'] ;
+   let qonda3 = qonda['products'][0] ;
+
+   
     var ul = document.querySelector('#list2');
     var li = document.createElement('li');
+    var li2 = document.createElement('li');
     li.innerText = JSON.stringify(qonda3);
     ul.appendChild(li);
  

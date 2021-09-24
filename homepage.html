@@ -28,26 +28,8 @@
 .wraphamb{display:flex;}
 
 .card img{width: 100%;height:90px;}
-
-.wrapslider{
-  display:grid;grid-template-columns: 75% 25%;
-   grid-template-rows: 170px;
-margin:0 150px;}
-  
-.divideheader2   { height:100%;background-color: white;}
  
-/*--------------------------*/
-.swiper-container{
-	width:100%; 	height:100%; 
-  }
-  
-  .swiper-slide{
-	background:#d3d3d3;
-	overflow:hidden;
-  }
- .swiper-slide img{
-	width:100%;	height:100%; 
-  }
+.divideheader2   { height:100%;background-color: white;}
   
   /*******************/
 .busqueda{display: flex;margin-top: 10px;}
@@ -68,16 +50,15 @@ margin:0 150px;}
 </style>
 </head>
 <body>
-<!-----------------Nav--------------------><!-----------------Nav-------------------->
+
+<!-----------------Nav--------------------> 
 <nav class="navbar navbar-expand-lg minav">
     <a class="titucasa" href="#">Compre en casa</a>
     <div id="usernav"></div>
     <a href="#" id="close" class="cerrars">Cerrar Sesión</a>
- 
-</nav>
+ </nav>
 
-
-<div id="app-cover">
+<!-- <div id="app-cover">
   <div id="bg-artwork"></div>
   <div id="bg-layer"></div>
   <div id="player">
@@ -122,83 +103,72 @@ margin:0 150px;}
           </div>
       </div>
   </div>
+</div>-->
+
+<!-----------------HEADER-------------------->   
+ <div class='csslider1 autoplay '>
+		<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
+		<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
+		<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
+		<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
+		<input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
+		<ul>
+			<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+				<img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;">
+			</div>
+			<li class='num0 img'>
+				 <a href="http://cssslider.com" target=""><img src='img/bebi/smirnof.jpg' alt='Buns' title='Buns' /> </a> 
+			</li>
+			<li class='num1 img'>
+				 <a href="http://cssslider.com" target=""><img src='img/bebi/bb2.png' alt='Croissant' title='Croissant' /> </a> 
+			</li>
+			<li class='num2 img'>
+				 <a href="http://cssslider.com" target=""><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /> </a> 
+			</li>
+		
+		</ul>
+		<div class='cs_description'>
+			<label class='num0'>
+				<span class="cs_title"><span class="cs_wrapper">Buns</span></span>
+			</label>
+			<label class='num1'>
+				<span class="cs_title"><span class="cs_wrapper">Croissant</span></span>
+			</label>
+			<label class='num2'>
+				<span class="cs_title"><span class="cs_wrapper">Lemon pie</span></span>
+			</label>
+		</div>
+		
+		<div class='cs_arrowprev'>
+			<label class='num0' for='cs_slide1_0'></label>
+			<label class='num1' for='cs_slide1_1'></label>
+			<label class='num2' for='cs_slide1_2'></label>
+		</div>
+		<div class='cs_arrownext'>
+			<label class='num0' for='cs_slide1_0'></label>
+			<label class='num1' for='cs_slide1_1'></label>
+			<label class='num2' for='cs_slide1_2'></label>
+		</div>
+		
+		<div class='cs_bullets'>
+			<label class='num0' for='cs_slide1_0'>
+				<span class='cs_point'></span>
+				<span class='cs_thumb'><img src='img/bebi/1.png' alt='Buns' title='Buns' /></span>
+			</label>
+			<label class='num1' for='cs_slide1_1'>
+				<span class='cs_point'></span>
+				<span class='cs_thumb'><img src='img/bebi/2.png' alt='Croissant' title='Croissant' /></span>
+			</label>
+			<label class='num2' for='cs_slide1_2'>
+				<span class='cs_point'></span>
+				<span class='cs_thumb'><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /></span>
+			</label>
+		</div>
 </div>
-<!---------------FIN NAV-------------------->
-
-<!-----------------HEADER--------------------><!-----------------HEADER-------------->
-<div class="wrapslider">
- 
-  <div class='csslider1 autoplay'  data-section="galletitas" id="galletitas">
-      <input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
-      <input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
-      <input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
-      <input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
-      <input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
-      <ul>
-        <div class="alturaslider" style="width: 100%;height:170px; visibility: hidden; font-size: 0px; line-height: 0;" >
-          <img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;height:100%;" >
-        </div>
-        <li class='num0 img'>
-           <a href="#" target=""><img src='img/bebi/1.png' alt='Buns' title='Buns' /> </a> 
-        </li>
-        <li class='num1 img'>
-           <a href="#" target=""><img src='img/bebi/2.png' alt='Croissant' title='Croissant' /> </a> 
-        </li>
-        <li class='num2 img'>
-           <a href="#" target=""><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /> </a> 
-        </li>
-      
-      </ul>
-      <div class='cs_description'>
-        <label class='num0'>
-          <span class="cs_title"><span class="cs_wrapper">BEBIDAS YA</span></span>
-        </label>
-        <label class='num1'>
-          <span class="cs_title"><span class="cs_wrapper">DELIVERY</span></span>
-        </label>
-        <label class='num2'>
-          <span class="cs_title"><span class="cs_wrapper">Antes <s>$250</s> ahora $200</span></span>
-        </label>
-      </div>
-       
-      
-      <div class='cs_bullets'>
-        <label class='num0' for='cs_slide1_0'>
-          <span class='cs_point'></span>
-          <span class='cs_thumb'><img src='img/bebi/1.png' alt='Buns' title='Buns' /></span>
-        </label>
-        <label class='num1' for='cs_slide1_1'>
-          <span class='cs_point'></span>
-          <span class='cs_thumb'><img src='img/bebi/2.png' alt='Croissant' title='Croissant' /></span>
-        </label>
-        <label class='num2' for='cs_slide1_2'>
-          <span class='cs_point'></span>
-          <span class='cs_thumb'><img src='img/bebi/3.png' alt='Lemon pie' title='Lemon pie' /></span>
-        </label>
-      </div>
-  </div> 
-
-  <div class="divideheader2">
-     <div class="swiper-container">
-      <div class="swiper-wrapper">  
-        <div class="swiper-slide"> <img src="img/bebi/smirnof.jpg"> </div>
-        <div class="swiper-slide"><img src="img/bebi/frize.jpg"></div>
-        <div class="swiper-slide"><img src="img/bebi/fede.jpg"></div>
-      </div>
-    </div>
    
-    
-  </div>
-</div>
-<!---------------FIN HEADER-------------------->
- 
-<!-----------------CARRITO--------------------><!-----------------CARRITO------------>
+<!-----------------CARRITO-------------------->
 <div class="container">
-<!--<div class="row wraptitubebi"><h3 class="titubebi">Qué desea comprar?</h3></div>
-       -->
-        
-       
-        <div class="busqueda">
+         <div class="busqueda">
             <h2 class="">Buscar</h2>
             <div class="searchmio" id="search">
               <label for="searchInput"></label>
@@ -244,29 +214,9 @@ margin:0 150px;}
             </table>
         </div>
 </div>
-<!--------FIN-----CARRITO-------------------->
 
-
-<!-----------------FORM--------------------><!-----------------FORM-------------------
-<div>
-        <form>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="nigeria">Nigeria</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-        
-          <button type="submit" id="submit" >Submit</button>
-        </form>
-</div>----->
-      <div class="formusu" id="formusu">
+<!-----------------FORM-------------------->
+<div class="formusu" id="formusu">
         <form class="formmio"> 
           <input type="text" id="usuario" name="firstname" placeholder="Su usuario..">
        
@@ -274,165 +224,8 @@ margin:0 150px;}
         </form>
       </div> 
 
-      <div id="envivo"> <a href="chat.html">Sigue tu pedido en vivo</a> </div>
-
-<!--
-            <h1>CRUD API REST AJAX</h1>
-      <section class="crud">
-        <article>
-          <h2 class="crud-title">Agregar Santo</h2>
-          <form class="crud-form">
-            <input type="text" name="nombre" placeholder="nombre" required>
-            <br>
-            <input type="text" name="constelacion" placeholder="constelación" required>
-            <br>
-            <input type="submit" value="Enviar">
-            <input type="hidden" name="id">
-          </form>
-        </article>
-        <article>
-          <h2>Ver Santos</h2>
-          <table class="crud-table">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Constelación</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </article>
-      </section>
-      <template id="crud-template">
-        <tr>
-          <td class="name"></td>
-          <td class="constellation"></td>
-          <td>
-            <button class="edit">Editar</button>
-            <button class="delete">Eliminar</button>
-          </td>
-        </tr>
-      </template>
-      <script>
-        /* **********     Curso JavaScript: 115. APIs REST: CRUD con AJAX (1/2) - #jonmircha     ********** */
-        /* **********     Curso JavaScript: 116. APIs REST: CRUD con AJAX (2/2) - #jonmircha     ********** */
-        const d = document,
-          $table = d.querySelector(".crud-table"),
-          $form = d.querySelector(".crud-form"),
-          $title = d.querySelector(".crud-title"),
-          $template = d.getElementById("crud-template").content,
-          $fragment = d.createDocumentFragment();
-    
-        const ajax = (options) => {
-          let { url, method, success, error, data } = options;
-          const xhr = new XMLHttpRequest();
-    
-          xhr.addEventListener("readystatechange", e => {
-            if (xhr.readyState !== 4) return;
-    
-            if (xhr.status >= 200 && xhr.status < 300) {
-              let json = JSON.parse(xhr.responseText); // lo primero del obj js la rta a formato json
-              success(json);
-            } else {
-              let message = xhr.statusText || "Ocurrió un error";
-              error(`Error ${xhr.status}: ${message}`);
-            }
-          });
-    
-          xhr.open(method || "GET", url);
-          xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
-          xhr.send(JSON.stringify(data));
-        }
-    
-        const getAll = () => {
-          ajax({
-            url: "http://localhost:3000/santos",
-            success: (res) => {
-              console.log(res);
-    
-              res.forEach(el => {
-                $template.querySelector(".name").textContent = el.nombre;
-                $template.querySelector(".constellation").textContent = el.constelacion;
-                $template.querySelector(".edit").dataset.id = el.id; //dataset pa acceder a los atrib y manip 
-                $template.querySelector(".edit").dataset.name = el.nombre;
-                $template.querySelector(".edit").dataset.constellation = el.constelacion;
-                $template.querySelector(".delete").dataset.id = el.id; //el endpoint q solo nos intreesa el ID
-    
-                let $clone = d.importNode($template, true); //clonando template
-                $fragment.appendChild($clone); //fragment pa no afectar tanto el cont del DOM
-              });
-              //se supone q ya fragment esta ready, el fragmento conm todos los nodeos clonados agregalos al tbody de la tabla
-              $table.querySelector("tbody").appendChild($fragment);
-            },
-            error: (err) => { //ajeno a a la pet ajax
-              console.log(err);
-              $table.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`); //afterend = desp q termine la tabla,al final
-            }
-          })
-        }
-    
-        d.addEventListener("DOMContentLoaded", getAll);
-    
-        d.addEventListener("submit", e => {
-          if (e.target === $form) {
-            e.preventDefault();
-    
-            if (!e.target.id.value) {
-              //Create - POST
-              ajax({
-                url: "http://localhost:3000/santos",
-                method: "POST",
-                success: (res) => location.reload(),
-                error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
-                data: {
-                  nombre: e.target.nombre.value,
-                  constelacion: e.target.constelacion.value
-                }
-              });
-            } else {
-              //Update - PUT
-              ajax({
-                url: `http://localhost:3000/santos/${e.target.id.value}`,
-                method: "PUT",
-                success: (res) => location.reload(),
-                error: (err) => $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
-                data: {
-                  nombre: e.target.nombre.value,
-                  constelacion: e.target.constelacion.value
-                }
-              });
-            }
-          }
-        });
-    
-        d.addEventListener("click", e => {
-          if (e.target.matches(".edit")) {
-            $title.textContent = "Editar Santo";
-            $form.nombre.value = e.target.dataset.name;
-            $form.constelacion.value = e.target.dataset.constellation;
-            $form.id.value = e.target.dataset.id;
-          }
-    
-          if (e.target.matches(".delete")) {
-            let isDelete = confirm(`¿Estás seguro de eliminar el id ${e.target.dataset.id}?`);
-    
-            if (isDelete) {
-              //Delete - DELETE
-              ajax({
-                url: `http://localhost:3000/santos/${e.target.dataset.id}`,
-                method: "DELETE",
-                success: (res) => location.reload(),
-                error: (err) => alert(err)
-              });
-            }
-          }
-        })
-      </script>
-      -->
-   
+<div id="envivo"> <a href="chat.html">Sigue tu pedido en vivo</a></div>
       
-
 <script>
   var mySwiper = new Swiper('.swiper-container',{speed: 400,
       spaceBetween: 0,
@@ -441,9 +234,7 @@ margin:0 150px;}
       autoplay:true,
       delay:2000,                             disableOnInteraction:false         
                  }                       
-                                        });
-  
-      
+                                        });   
 </script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
