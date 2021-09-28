@@ -110,11 +110,7 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
     background: #F4F; 
     box-shadow:1px 1px 22px #F4F;
      
-  }
- /**************--------------------------**************/
-  
- /*-----------------------------*/
- 
+  } 
 /*  Needed for filters */
 
 .hide { /* You can play with the seconds to change the "animation" */
@@ -168,10 +164,45 @@ text-shadow: #F4F 0px 0px 5px, rgb(67, 142, 172) 0px 0px 10px, rgb(41, 92, 116) 
  }
   /*----------------*/
   .wrapul{
-    display:grid;color:black;
-    grid-template-columns: 80% 20%;
+    margin:0 10px;
+    display:grid; 
+     grid-template-columns: 75% 25%;
      
   }
-  .wrapul li{
-    height:100px;
-  }                                                           
+  .wrapul li{  height:100px; } 
+ 
+ .wrapul #total2 li{   
+   padding-top: 20px;
+text-align: center;
+  color:black; font-weight: 600;
+list-style: none; 
+font-size: 22px;  
+ font-family:sans-serif;
+ background-color: yellow; 
+ border-bottom: 2px solid white;
+ height:100px;
+  }  
+  .wrapul #items li{   
+    padding-top: 5px;overflow: auto;
+    max-height: 100vh;
+  font-family:sans-serif;
+   color:white; 
+ list-style: none; 
+ font-size: 18px;  
+ background-color: black; border-bottom: 2px solid white;
+   }                                                         
+#list3{
+  background-color: black; 
+  font-family:sans-serif; 
+}
+
+#list3 li{  border-bottom: 2px dotted blueviolet;}
+   @media only screen and (min-width: 321px) and (max-width: 768px) {
+    
+ .wrapul #total2 li{    font-size: 17px;  
+ }  
+ .wrapul #items li{font-size: 13px;
+   }   
+
+   
+    } 

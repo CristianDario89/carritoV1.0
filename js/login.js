@@ -25,9 +25,9 @@ const password2 = document.getElementById("password").value;
  
 if(username2 == 'usuario' && password2 == '123456' 
 ||  username2 == 'mono' && password2 == '121212'
-||  username2 == 'melli' && password2 == '131313'
-||  username2 == 'naupro' && password2 == '141414'
-||  username2 == 'BebidasYa' && password2 == '151515'){
+||  username2 == 'bato' && password2 == 'bato'
+||  username2 == 'aurelio' && password2 == 'aurelio'
+||  username2 == 'SOPORTE' && password2 == '151515'){
          alert("Éxito. ahora en la pera.")
         return false;
     }else{

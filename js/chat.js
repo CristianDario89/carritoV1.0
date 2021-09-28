@@ -17,7 +17,7 @@ var myName = prompt("Ingrese Usuario");
 
 
 if(myName == 'usuario'|| myName == 'BebidasYa'  || myName == 'mono' 
-|| myName == 'melli'  || myName == 'admin'      || myName == 'naupro'){
+|| myName == 'bato'  || myName == 'admin'      || myName == 'aurelio'){
          
 function sendMessage() {
     // get message
